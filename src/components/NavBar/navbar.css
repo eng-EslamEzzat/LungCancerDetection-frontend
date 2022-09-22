@@ -1,0 +1,124 @@
+.logo {
+  position: absolute;
+  top: 2rem;
+  width: 70px;
+  cursor: pointer;
+  transition: transform 0.7s ease-in-out;
+}
+
+.logo:hover {
+  rotate: 15%;
+  transform: rotate(360deg);
+}
+
+.nav-bar {
+  position: absolute;
+  top: 3%;
+  left: 7%;
+  z-index: 2;
+  width: 85%;
+  height: 15%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: left;
+}
+
+.nav-bar .logo {
+  margin-right: 100px;
+}
+
+.nav-bar ul {
+  position: absolute;
+  top: 2.5rem;
+  display: flex;
+  list-style-type: none;
+  margin-left: 10rem;
+  padding: 0;
+  /* overflow: hidden; */
+  /* background-color: #333; */
+}
+
+.nav-bar li {
+  float: left;
+}
+
+.nav-bar li a {
+  display: block;
+  color: #e2b0a1;
+  text-align: center;
+  font-size: large;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-bar li a:hover {
+  /* color: #f58e85; */
+  text-shadow: 1px 1px 5px #e2b0a1;
+}
+
+.nav-bar li a.active{
+  color: #f58e85;
+  text-shadow: 1px 1px 5px #e2b0a1;
+}
+
+.navbar-toggler{
+  border: none;
+  padding: 15px 21px;
+  border-radius: 9px;
+  font-size: 25px;
+  position: absolute;
+  top: 2rem;
+  right: -.1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.navbar-toggler:hover{
+  background: none;
+  color: #f58e85;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo{
+    top: .5rem;
+  }
+  .navbar-toggler{
+    display: flex;
+  }
+  .nav-bar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-bar ul{
+    margin: 0;
+    top: .5rem;
+    display: none;
+    z-index: 2;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    border: 2px solid #f58e85;
+    border-radius: 18px;
+  }
+  .navbar-toggler{
+    /* z-index: 3; */
+    top: .5rem;
+  }
+  .nav-bar li a {
+    padding: 10px 0;
+    border-bottom: 2px solid;
+    border-radius: 10px;
+  }
+  .nav-bar li a:hover{
+    background-color: #f58e85;
+    color: white;
+    border: none;
+  }
+  .nav-bar ul.active{
+    display: flex;
+  }
+}

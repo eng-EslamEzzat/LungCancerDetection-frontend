@@ -1,0 +1,47 @@
+.about{
+  margin-top: 20vh;
+  height: 80vh;
+  color: #f58e85;
+  padding: 0 5vw;
+  background-image: linear-gradient(white, #fde8e7, #f58e85 120%);
+}
+
+.profile{
+  text-align: center;
+}
+
+.profile img{
+  border: 3px solid #f58e85;
+  border-radius: 100%;
+  width: 150px;
+  height: auto;
+}
+
+.list{
+  position: static;
+  list-style-position: inside;
+}
+.list li{
+  padding: 5px;
+}
+
+.about p{
+  margin: 0 25px;
+  margin-top: 10px;
+}
+.about a{
+  color: #e2b0a1;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px){
+  .motion{
+    display: none;
+  }
+  .list{
+    margin-top: 20px;
+  }
+  .about{
+    height: auto;
+  }
+}
