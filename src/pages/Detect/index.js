@@ -20,7 +20,7 @@ export default function Home() {
 
     const formdata = new FormData();
     formdata.append("image", event.target.files[0]);
-    await fetch("http://127.0.0.1:8000/api/model/", {
+    await fetch("http://3.94.179.137/api/model/", {
       method: "POST",
       body: formdata
     })
